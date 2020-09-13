@@ -16,4 +16,4 @@ A simple VBA based add-in to automate a few things that are missing in PowerPoin
 * To **uninstall**, repeat the process, and simply click on *Remove* this time.
 
 ## License
-In a gist, I don't care what you do with it, as long as you don't expect it to work all the time and don't blame me for any consequence arising from its use.
+In a gist, I don't care what you do with it, as long as you don't expect it to work all the time and don't blame me for any consequence arising from its use. Offically, read the license file in the repository.
