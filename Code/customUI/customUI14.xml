@@ -1,0 +1,82 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui">
+	<ribbon startFromScratch="false">
+		<tabs>
+			<tab id="snap" label="Snap">
+				<group id="set" label="Set">
+					<button id="LockShape" label="Snap Object" imageMso="PositionAbsoluteMarks" size="large" onAction="LockShape"
+					screentip="Set Primary Shape"
+					supertip ="Set a particular shape as the primary one to reference properties i.e. 'Snap' from."/>
+				</group>
+				<group id="SnapToShape" label="Shapes">
+					<button id="SetLength" label="Height" imageMso="PageScaleToFitHeight" size="normal" onAction="SetHeight"
+					screentip="Snap height to primary"
+					supertip ="Set the height of the chosen shape to that of the primary shape." />
+					<button id="SetWidth" label="Width" imageMso="PageScaleToFitWidth" size="normal" onAction="SetWidth"
+					screentip="Snap width to primary"
+					supertip ="Set the width of the chosen shape to that of the primary shape." />
+					<button id="SetDimesion" label="Dim" imageMso="ZoomFitToWindow" size="normal" onAction="SetDimension"
+					screentip="Snap dimensions to primary"
+					supertip ="Set the height and width of the chosen shape to that of the primary shape."/>					
+					<button id="SetFill" label="Fill" imageMso="ViewDisplayInColor" size="normal" onAction="SetFill"
+					screentip="Snap fill to primary"
+					supertip ="Set the fill colour and type of the chosen shape to that of the primary shape. This does not work well for charts and tables."/>					
+					<button id="SetOutline" label="Outline" imageMso="ControlRectangle" size="normal" onAction="SetOutline"
+					screentip="Snap outline to primary"
+					supertip ="Set the outline colour and type of the chosen shape to that of the primary shape. This does not work well for charts and tables."/>	
+					<button id="SetDimCol" label="Dim + Colour" imageMso="PictureStylesGallery" size="normal" onAction="SetDimCol"
+					screentip="Snap dimensions and colours to primary"
+					supertip ="Set the dimensions and colours of the chosen shape to that of the primary shape. This does not work well for charts and tables."/>
+					<button id="SetPosition" label="Position" imageMso="PositionFitToWindow" size="normal" onAction="SetPosition"
+					screentip="Snap position to primary"
+					supertip ="Set the position of the chosen shape to that of the primary shape. Note that this will place the current shape over the primary shape if on the same slide."/>
+					<button id="SetDimPos" label="Dim + Pos" imageMso="ShowTaskDetailsPage" size="normal" onAction="SetDimPos"
+					screentip="Snap dimension and position to primary"
+					supertip ="Set the dimension and position of the chosen shape to that of the primary shape."/>
+					<button id="SetAll" label="All" imageMso="SharingRequestAllow" size="normal" onAction="SetAll"
+					screentip="Snap all properties to primary"
+					supertip ="Set the properties mentioned here of the chosen shape to that of the primary shape. This does not work well for charts and tables."/>
+				</group>
+				<group id="SnapToChart" label="Charts">
+					<button id="SyncValueAxis" label="Sync Value Axis" imageMso="ChartPrimaryHorizontalAxis" size="normal" onAction="SyncValueAxis"
+					screentip="Snap continous axis to primary"
+					supertip ="Sets the value based continous axis of current chosen chart to have the same scale and number format as that of the primary chart. Usually implments on Y axis."/>
+					<button id="SyncDateAxis" label="Sync Date Axis" imageMso="ChartPrimaryHorizontalAxis" size="normal" onAction="SyncDateAxis"
+					screentip="Snap date axis to primary"
+					supertip ="Sets the date based continuous axis of current chosen chart to have the same scale and date/number format as that of the primary chart. Usually implments on X axis. For scatter plots, this will treat the X axis as a value axis."/>
+					<button id="SyncPlotArea" label="Sync Plot Area" imageMso="ChartPlotArea" size="normal" onAction="SyncPlotArea"
+					screentip="Snap Plot Area location and dimensions"
+					supertip ="Snap a PlotArea's dimensions and position that of another chart - also resizes the chart to accomodate the PlotArea dimensions."/>
+					<button id="SyncTitleArea" label="Sync Title Area" imageMso="ChartTitle" size="normal" onAction="SyncTitleArea"
+					screentip="Snap Title Area location "
+					supertip ="This will position the title to the corresponding centre location of the Primary Chart's title. Works best when chart dimensions of both are the same."/>
+					<button id="SyncLegendArea" label="Sync Legend" imageMso="ChartLegend" size="normal" onAction="SyncLegendArea"
+					screentip="Snap Legend location and dimensions"
+					supertip ="Snap Legend location and dimensions - might change format to reduce size to allow it to fit."/>
+					<button id="FormatPainter" label="Format Painter" imageMso="FormatPainter" size="normal" onAction="FormatPainter"
+					screentip="Convinience function that mimicks the built in FormatPainter"
+					supertip ="You will need to first Snap a shape and then use FormatPainter to copy object properties."/>
+					<button id="ResetAxis" label="Reset Axes Scales" imageMso="ChartResetToMatchStyle" size="normal" onAction="ResetAxis"
+					screentip="Reset to allow Excel to auto-set the value axis."
+					supertip ="Convinience function to undo 'Sync Axes' easily."/>
+                    <button id="CustomizeDataLabels" label="Customize Labels" imageMso="ChartDataLabel" size="normal" onAction="CustomizeDataLabels"
+                    screentip="Customize data labels to show only specific values."
+                    supertip ="Choose from a wide range of values to fill from - max, min, first, last or every N values to highlight"/>
+                    <button id="RerunCustomLabels" label="Rerun Customization" imageMso="ChartDataLabel" size="normal" onAction="RerunCustomLabels"
+                    screentip="Rerun customization of data labels"
+                    supertip ="This will allow you to rerun the same data label customization applied earlier if you clicked Save and Run"/>
+				</group>
+				<group id="SnapToTable" label="Tables">
+					<button id="SetColWidths" label="Sync Column Widths" imageMso="TableWidth" size="normal" onAction="SyncColumnWidth"
+					screentip="Snap column widths to primary"
+					supertip ="Possible currently only for tables with identical column counts. Syncs the width of each individual column to the corresponding one in primary."/>
+					<button id="SetRowHeight" label="Sync Row Widths" imageMso="TableHeight" size="normal" onAction="SyncRowHeight"
+					screentip="Snap row heights to primary"
+					supertip ="Possible currently only for tables with identical row counts. Syncs the height of each individual row to the corresponding one in primary."/>
+					<button id="SetTableDims" label="Sync Both Widths" imageMso="ZoomFitToWindow" size="normal" onAction="SyncTableDims"
+					screentip="Snap cell dimensions to primary"
+					supertip ="Possible currently only for tables with identical row and column counts. Syncs the dimension of each individual cell to the corresponding one in primary."/>
+				</group>
+			</tab>
+		</tabs>
+	</ribbon>
+</customUI>
