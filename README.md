@@ -4,6 +4,7 @@ A simple VBA based add-in to automate a few things that are missing in PowerPoin
 ## Features
 
 ### Decent, one click UI
+
 ![SnapUI](https://raw.githubusercontent.com/avimallu/PowerPointSnap/master/Screenshots/SnapScreenshot.JPG)
 
 ### For most objects
@@ -14,6 +15,7 @@ A simple VBA based add-in to automate a few things that are missing in PowerPoin
 ### For charts
 * Supports syncing the axes of charts with differing axis lengths, plot areas, title positions and legend positions (both charts must support the property).
 * Supports data label customization options - highlight only specific (or all) legend entries, for their first/last/min/max/median or every N values.
+
 ![DataLabelsUI](https://raw.githubusercontent.com/avimallu/PowerPointSnap/master/Screenshots/DataLabelsScreenshot.JPG)
 
 ### For tables
