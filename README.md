@@ -1,5 +1,5 @@
 # Snap for Microsoft PowerPoint
-A simple VBA based add-in to automate a few things that are missing in PowerPoint. Can apply properties (size, colour, axes) of Object A to another Object B. Still very much in alpha.
+A simple VBA based add-in to automate a few things that are missing in PowerPoint. Can apply properties (size, colour, axes) of Object A to another Object B. If there are bugs, feel free to raise an issue. I'm not a professional programmer, so I'll look into it when I get the time.
 
 ## Features
 
