@@ -1,3 +1,5 @@
+> A majority of this tool was written over a weekend in a moment of frustration using PowerPoint. I consider it feature complete (albeit with a few bugs), and while I did want to spend some time perfecting it, I did not want to fall into [this trap](https://xkcd.com/1319/). Therefore, this repository has been archived, but it should still function without requiring maintenance, at least as long as VBA itself is functional in PowerPoint.
+
 # Snap for Microsoft PowerPoint
 A simple VBA based add-in to automate a few things that are missing in PowerPoint. Can apply properties (size, colour, axes) of Object A to another Object B. If there are bugs, feel free to raise an issue. I'm not a professional VBA programmer, so I'll look into it when I get the time.
 
